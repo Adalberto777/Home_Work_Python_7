@@ -4,12 +4,3 @@ def writeToFile(surmname: str, name: str, tel: str, description: str, file_name:
         file.write(f'{name}\n\n')
         file.write(f'{tel}\n\n')
         file.write(f'{description}\n\n')
-
-
-# def createNewData(surmname: str, name: str, tel: str, description: str) -> list:
-#     my_list = []
-#     my_list.append(surmname)
-#     my_list.append(name)
-#     my_list.append(tel)
-#     my_list.append(description)
-#     return my_list

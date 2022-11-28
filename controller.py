@@ -1,6 +1,7 @@
 import view
 import model_new_phone
 import model_import_export
+import model_export_csv
 
 
 def getMenuItem() -> str:
@@ -14,8 +15,8 @@ def getMenuItem() -> str:
         model_import_export.writeImportText(model_import_export.readImportText('phone_book.txt'), 'export_phone_book.txt')
         print('Export data from phonebook to export_phone_book.txt') 
     elif result_menu == '4': 
-        print("в разработке")
-        getMenuItem()
+        model_export_csv.createNewData(model_export_csv.readImportText('phone_book.txt'))
+        print('Export data from phonebook to phone_book.csv') 
     elif result_menu == '5': 
         print("в разработке")
         getMenuItem()

@@ -1,4 +1,4 @@
-def readImportText(donor: str) -> list:
+def readImportText(donor: str) -> str:
     with open(donor, "r", encoding = "utf-8") as file_data_donor:
         data = file_data_donor.read()
     return data
